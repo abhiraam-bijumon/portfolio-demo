@@ -277,23 +277,45 @@ export default function Index() {
                 <a
                   href="https://github.com/abhiraam-bijumon"
                   target="_blank"
-                  className="relative group border border-border px-6 py-3 rounded-lg font-medium hover:bg-accent transition-all duration-300 flex items-center gap-2 overflow-hidden cursor-pointer transform hover:scale-105 hover:shadow-lg"
+                  className="relative group inline-block cursor-pointer"
                 >
-                  {/* Animated Border */}
-                  <div className="absolute inset-0 rounded-lg">
-                    <div className="absolute inset-0 rounded-lg border-2 border-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div className="absolute inset-0.5 rounded-lg bg-background"></div>
+                  {/* Outer Glow */}
+                  <div className="absolute -inset-1 bg-gradient-to-r from-slate-600 via-slate-800 to-slate-600 rounded-xl blur-lg opacity-0 group-hover:opacity-60 transition-all duration-500"></div>
+
+                  {/* Main Button */}
+                  <div className="relative bg-gradient-to-r from-slate-800 via-slate-900 to-slate-800 border-2 border-slate-600 group-hover:border-slate-400 text-white px-6 py-3 rounded-xl font-medium transition-all duration-500 transform group-hover:scale-105 group-hover:rotate-1 overflow-hidden shadow-xl group-hover:shadow-slate-500/30">
+                    {/* Inner Glow */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-800 skew-x-12"></div>
+
+                    {/* GitHub-themed particles */}
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      <div
+                        className="absolute top-2 left-3 w-0.5 h-0.5 bg-green-400 rounded-full animate-pulse"
+                        style={{ animationDelay: "0s" }}
+                      ></div>
+                      <div
+                        className="absolute top-3 right-4 w-0.5 h-0.5 bg-slate-300 rounded-full animate-bounce"
+                        style={{ animationDelay: "0.2s" }}
+                      ></div>
+                      <div
+                        className="absolute bottom-2 left-5 w-0.5 h-0.5 bg-blue-400 rounded-full animate-ping"
+                        style={{ animationDelay: "0.4s" }}
+                      ></div>
+                    </div>
+
+                    {/* Text Content */}
+                    <span className="relative z-10 flex items-center gap-2 text-base">
+                      <Github className="w-5 h-5 group-hover:rotate-[360deg] group-hover:scale-125 transition-all duration-700 drop-shadow-lg" />
+                      <span className="group-hover:text-slate-200 transition-colors duration-300">
+                        GitHub
+                      </span>
+
+                      {/* Code bracket effect */}
+                      <div className="flex opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span className="text-green-400 text-sm font-mono">{`{}`}</span>
+                      </div>
+                    </span>
                   </div>
-
-                  {/* Shimmer Effect */}
-                  <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-foreground/10 to-transparent skew-x-12"></div>
-
-                  {/* Button Content */}
-                  <span className="relative z-10 flex items-center gap-2">
-                    <Github className="w-4 h-4 group-hover:rotate-12 group-hover:scale-110 transition-all duration-300" />
-                    GitHub
-                    <div className="w-1 h-1 bg-foreground/60 rounded-full opacity-0 group-hover:opacity-100 animate-pulse transition-opacity duration-300"></div>
-                  </span>
                 </a>
               </div>
             </div>
