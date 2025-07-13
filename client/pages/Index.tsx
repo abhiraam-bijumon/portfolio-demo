@@ -138,8 +138,11 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Profile Picture */}
             <div className="lg:col-span-4 flex justify-center lg:justify-start">
-              <div className="relative group animate-fade-in">
-                <div className="w-64 h-64 rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-primary/5 border border-border">
+              <div className="relative group animate-fade-in cursor-pointer">
+                {/* Glow Effect */}
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 rounded-2xl blur-lg opacity-0 group-hover:opacity-75 transition-opacity duration-500 animate-pulse group-hover:animate-none"></div>
+
+                <div className="relative w-64 h-64 rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-primary/5 border border-border group-hover:border-primary/50 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-primary/25">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Fcbef59f32b8f46c3878540ede7051753%2F254a63b0e22f454ca1658a3b8434be20?format=webp&width=800"
                     alt="Abhiraam B - Game Developer"
