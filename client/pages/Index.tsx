@@ -132,42 +132,21 @@ export default function Index() {
         </div>
       </nav>
 
-                        {/* Hero Section */}
+      {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Profile Picture */}
             <div className="lg:col-span-4 flex justify-center lg:justify-start">
-                            <div className="relative group animate-fade-in cursor-pointer">
-                {/* Glow Effect */}
-                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 rounded-2xl blur-lg opacity-0 group-hover:opacity-75 transition-opacity duration-500 animate-pulse group-hover:animate-none"></div>
-
-                <div className="relative w-64 h-64 rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-primary/5 border border-border group-hover:border-primary/50 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-primary/25">
-                                                      <img
+              <div className="relative group animate-fade-in">
+                <div className="w-64 h-64 rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-primary/5 border border-border">
+                  <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Fcbef59f32b8f46c3878540ede7051753%2F254a63b0e22f454ca1658a3b8434be20?format=webp&width=800"
                     alt="Abhiraam B - Game Developer"
-                    className="w-full h-full object-cover group-hover:scale-110 group-hover:rotate-2 transition-all duration-700 ease-out filter group-hover:brightness-110 group-hover:contrast-110"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                                  {/* Shimmer Effect */}
-                  <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12"></div>
-
-                  {/* Enhanced Overlay */}
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/10 to-transparent group-hover:from-primary/30 group-hover:via-purple-500/20 group-hover:to-blue-500/20 transition-all duration-500"></div>
-
-                  {/* Floating Particles Effect */}
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <div className="absolute top-4 left-4 w-1 h-1 bg-blue-400 rounded-full animate-bounce" style={{animationDelay: '0s'}}></div>
-                    <div className="absolute top-8 right-6 w-1 h-1 bg-purple-400 rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
-                    <div className="absolute bottom-6 left-8 w-1 h-1 bg-blue-300 rounded-full animate-bounce" style={{animationDelay: '0.4s'}}></div>
-                    <div className="absolute bottom-4 right-4 w-1 h-1 bg-purple-300 rounded-full animate-bounce" style={{animationDelay: '0.6s'}}></div>
-                  </div>
-                </div>
-
-                {/* Tech Badge */}
-                <div className="absolute -bottom-2 -right-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-full text-xs font-semibold opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500 shadow-lg">
-                  Game Dev
-                </div>
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/10 to-transparent group-hover:from-primary/20 transition-all duration-300" />
               </div>
             </div>
 
@@ -175,39 +154,42 @@ export default function Index() {
             <div className="lg:col-span-8">
               <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 animate-fade-in">
                 Game Developer &
-                <span className="text-primary block">Creative Technologist</span>
+                <span className="text-primary block">
+                  Creative Technologist
+                </span>
               </h1>
-                        <p className="text-xl text-muted-foreground mb-8 leading-relaxed animate-fade-in">
-              I craft immersive gaming experiences and interactive digital
-              worlds. Passionate about pushing the boundaries of what's possible
-              in game development. I have been coding since 5 years old .
-            </p>
-            <div className="flex items-center gap-4 text-muted-foreground mb-8 animate-fade-in">
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4" />
-                                <span>San Antonio , TX</span>
+              <p className="text-xl text-muted-foreground mb-8 leading-relaxed animate-fade-in">
+                I craft immersive gaming experiences and interactive digital
+                worlds. Passionate about pushing the boundaries of what's
+                possible in game development. I have been coding since 5 years
+                old .
+              </p>
+              <div className="flex items-center gap-4 text-muted-foreground mb-8 animate-fade-in">
+                <div className="flex items-center gap-2">
+                  <MapPin className="w-4 h-4" />
+                  <span>San Antonio , TX</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Mail className="w-4 h-4" />
+                  <span>abhiraambijumon@gmail.com</span>
+                </div>
               </div>
-              <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4" />
-                                <span>abhiraambijumon@gmail.com</span>
+              <div className="flex items-center gap-4 animate-fade-in">
+                <a
+                  href="#games"
+                  className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors"
+                >
+                  View My Games
+                </a>
+                <a
+                  href="https://github.com/abhiraam-bijumon"
+                  target="_blank"
+                  className="border border-border px-6 py-3 rounded-lg font-medium hover:bg-accent transition-colors flex items-center gap-2"
+                >
+                  <Github className="w-4 h-4" />
+                  GitHub
+                </a>
               </div>
-            </div>
-            <div className="flex items-center gap-4 animate-fade-in">
-              <a
-                href="#games"
-                className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors"
-              >
-                View My Games
-              </a>
-                            <a
-                href="https://github.com/abhiraam-bijumon"
-                target="_blank"
-                className="border border-border px-6 py-3 rounded-lg font-medium hover:bg-accent transition-colors flex items-center gap-2"
-              >
-                <Github className="w-4 h-4" />
-                GitHub
-                            </a>
-            </div>
             </div>
           </div>
         </div>
@@ -348,14 +330,14 @@ export default function Index() {
             I'd love to hear from you.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <a
+            <a
               href="mailto:abhiraambijumon@gmail.com"
               className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors flex items-center gap-2"
             >
               <Mail className="w-4 h-4" />
               Get In Touch
             </a>
-                        <a
+            <a
               href="https://github.com/abhiraam-bijumon"
               target="_blank"
               className="border border-border px-8 py-3 rounded-lg font-medium hover:bg-accent transition-colors flex items-center gap-2"
