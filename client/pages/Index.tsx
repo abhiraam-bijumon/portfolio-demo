@@ -112,21 +112,27 @@ export default function Index() {
           <div className="flex items-center gap-6">
             <a
               href="#games"
-              className="text-muted-foreground hover:text-foreground transition-colors"
+              className="relative group text-muted-foreground hover:text-foreground transition-all duration-300 py-2 px-3 rounded-md hover:bg-accent/50"
             >
-              Games
+              <span className="relative z-10">Games</span>
+              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300 rounded-full"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </a>
             <a
               href="#certificates"
-              className="text-muted-foreground hover:text-foreground transition-colors"
+              className="relative group text-muted-foreground hover:text-foreground transition-all duration-300 py-2 px-3 rounded-md hover:bg-accent/50"
             >
-              Certificates
+              <span className="relative z-10">Certificates</span>
+              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300 rounded-full"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </a>
             <a
               href="#contact"
-              className="text-muted-foreground hover:text-foreground transition-colors"
+              className="relative group text-muted-foreground hover:text-foreground transition-all duration-300 py-2 px-3 rounded-md hover:bg-accent/50"
             >
-              Contact
+              <span className="relative z-10">Contact</span>
+              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300 rounded-full"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </a>
           </div>
         </div>
