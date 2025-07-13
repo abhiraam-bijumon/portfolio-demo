@@ -138,15 +138,49 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Profile Picture */}
             <div className="lg:col-span-4 flex justify-center lg:justify-start">
-              <div className="relative group animate-fade-in">
-                <div className="w-64 h-64 rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-primary/5 border border-border">
+              <div className="relative group animate-fade-in cursor-pointer">
+                {/* Glow Effect */}
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 rounded-2xl blur-lg opacity-0 group-hover:opacity-75 transition-opacity duration-500 animate-pulse group-hover:animate-none"></div>
+
+                {/* Main Image Container */}
+                <div className="relative w-64 h-64 rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-primary/5 border border-border group-hover:border-primary/50 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-primary/25">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Fcbef59f32b8f46c3878540ede7051753%2F254a63b0e22f454ca1658a3b8434be20?format=webp&width=800"
                     alt="Abhiraam B - Game Developer"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-110 group-hover:rotate-2 transition-all duration-700 ease-out filter group-hover:brightness-110 group-hover:contrast-110"
                   />
+
+                  {/* Shimmer Effect */}
+                  <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12"></div>
+
+                  {/* Enhanced Overlay */}
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/10 to-transparent group-hover:from-primary/30 group-hover:via-purple-500/20 group-hover:to-blue-500/20 transition-all duration-500"></div>
+
+                  {/* Floating Particles Effect */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <div
+                      className="absolute top-4 left-4 w-1 h-1 bg-blue-400 rounded-full animate-bounce"
+                      style={{ animationDelay: "0s" }}
+                    ></div>
+                    <div
+                      className="absolute top-8 right-6 w-1 h-1 bg-purple-400 rounded-full animate-bounce"
+                      style={{ animationDelay: "0.2s" }}
+                    ></div>
+                    <div
+                      className="absolute bottom-6 left-8 w-1 h-1 bg-blue-300 rounded-full animate-bounce"
+                      style={{ animationDelay: "0.4s" }}
+                    ></div>
+                    <div
+                      className="absolute bottom-4 right-4 w-1 h-1 bg-purple-300 rounded-full animate-bounce"
+                      style={{ animationDelay: "0.6s" }}
+                    ></div>
+                  </div>
                 </div>
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/10 to-transparent group-hover:from-primary/20 transition-all duration-300" />
+
+                {/* Tech Badge */}
+                <div className="absolute -bottom-2 -right-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-full text-xs font-semibold opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500 shadow-lg">
+                  Game Dev
+                </div>
               </div>
             </div>
 
