@@ -143,7 +143,7 @@ export default function Index() {
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed animate-fade-in">
               I craft immersive gaming experiences and interactive digital
               worlds. Passionate about pushing the boundaries of what's possible
-              in game development.
+              in game development. I have been coding since 5 years old .
             </p>
             <div className="flex items-center gap-4 text-muted-foreground mb-8 animate-fade-in">
               <div className="flex items-center gap-2">
@@ -152,7 +152,7 @@ export default function Index() {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>abhiraam@example.com</span>
+                <span>abhiraambijumon@gmail.com</span>
               </div>
             </div>
             <div className="flex items-center gap-4 animate-fade-in">
