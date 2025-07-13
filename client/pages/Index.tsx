@@ -217,30 +217,62 @@ export default function Index() {
               <div className="flex items-center gap-4 animate-fade-in">
                 <a
                   href="#games"
-                  className="relative group bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-all duration-300 overflow-hidden cursor-pointer transform hover:scale-105 hover:shadow-2xl hover:shadow-primary/25"
+                  className="relative group inline-block cursor-pointer"
                 >
-                  {/* Glow Effect */}
-                  <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg blur opacity-0 group-hover:opacity-75 transition-opacity duration-300"></div>
+                  {/* Outer Glow */}
+                  <div className="absolute -inset-2 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 rounded-xl blur-xl opacity-0 group-hover:opacity-60 transition-all duration-500 animate-pulse group-hover:animate-none"></div>
 
-                  {/* Shimmer Effect */}
-                  <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12"></div>
+                  {/* Main Button */}
+                  <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-500 transform group-hover:scale-110 group-hover:rotate-1 overflow-hidden shadow-2xl group-hover:shadow-blue-500/50">
+                    {/* Inner Shimmer */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 skew-x-12"></div>
 
-                  {/* Button Content */}
-                  <span className="relative z-10 flex items-center gap-2">
-                    View My Games
-                    <div
-                      className="w-1 h-1 bg-white/60 rounded-full opacity-0 group-hover:opacity-100 animate-bounce transition-opacity duration-300"
-                      style={{ animationDelay: "0.1s" }}
-                    ></div>
-                    <div
-                      className="w-1 h-1 bg-white/60 rounded-full opacity-0 group-hover:opacity-100 animate-bounce transition-opacity duration-300"
-                      style={{ animationDelay: "0.2s" }}
-                    ></div>
-                    <div
-                      className="w-1 h-1 bg-white/60 rounded-full opacity-0 group-hover:opacity-100 animate-bounce transition-opacity duration-300"
-                      style={{ animationDelay: "0.3s" }}
-                    ></div>
-                  </span>
+                    {/* Particle System */}
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      <div
+                        className="absolute top-2 left-4 w-1 h-1 bg-white rounded-full animate-ping"
+                        style={{ animationDelay: "0s" }}
+                      ></div>
+                      <div
+                        className="absolute top-3 right-6 w-0.5 h-0.5 bg-blue-300 rounded-full animate-pulse"
+                        style={{ animationDelay: "0.2s" }}
+                      ></div>
+                      <div
+                        className="absolute bottom-3 left-6 w-0.5 h-0.5 bg-purple-300 rounded-full animate-bounce"
+                        style={{ animationDelay: "0.4s" }}
+                      ></div>
+                      <div
+                        className="absolute bottom-2 right-4 w-1 h-1 bg-white rounded-full animate-ping"
+                        style={{ animationDelay: "0.6s" }}
+                      ></div>
+                    </div>
+
+                    {/* Text with Enhanced Effects */}
+                    <span className="relative z-10 flex items-center gap-3 text-lg tracking-wide">
+                      <span className="group-hover:text-blue-100 transition-colors duration-300">
+                        View My Games
+                      </span>
+
+                      {/* Animated Dots */}
+                      <div className="flex gap-1">
+                        <div
+                          className="w-2 h-2 bg-white/80 rounded-full opacity-60 group-hover:opacity-100 group-hover:animate-bounce transition-all duration-300"
+                          style={{ animationDelay: "0.1s" }}
+                        ></div>
+                        <div
+                          className="w-2 h-2 bg-white/80 rounded-full opacity-60 group-hover:opacity-100 group-hover:animate-bounce transition-all duration-300"
+                          style={{ animationDelay: "0.2s" }}
+                        ></div>
+                        <div
+                          className="w-2 h-2 bg-white/80 rounded-full opacity-60 group-hover:opacity-100 group-hover:animate-bounce transition-all duration-300"
+                          style={{ animationDelay: "0.3s" }}
+                        ></div>
+                      </div>
+                    </span>
+
+                    {/* Border Animation */}
+                    <div className="absolute inset-0 rounded-xl border-2 border-white/20 group-hover:border-white/40 transition-colors duration-300"></div>
+                  </div>
                 </a>
                 <a
                   href="https://github.com/abhiraam-bijumon"
