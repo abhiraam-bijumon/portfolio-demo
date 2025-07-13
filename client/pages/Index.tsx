@@ -1,62 +1,338 @@
-import { DemoResponse } from "@shared/api";
-import { useEffect, useState } from "react";
+import {
+  Github,
+  ExternalLink,
+  Award,
+  Calendar,
+  MapPin,
+  Mail,
+} from "lucide-react";
+
+interface Game {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  technologies: string[];
+  githubUrl?: string;
+  liveUrl?: string;
+  featured?: boolean;
+}
+
+interface Certificate {
+  id: string;
+  title: string;
+  issuer: string;
+  date: string;
+  credentialUrl?: string;
+  image: string;
+}
+
+const games: Game[] = [
+  {
+    id: "1",
+    title: "Pixel Adventure",
+    description:
+      "A 2D platformer game built with Unity featuring custom physics, level editor, and engaging gameplay mechanics.",
+    image: "/placeholder.svg",
+    technologies: ["Unity", "C#", "2D Physics"],
+    githubUrl: "https://github.com/username/pixel-adventure",
+    liveUrl: "https://pixel-adventure.game",
+    featured: true,
+  },
+  {
+    id: "2",
+    title: "Space Shooter Pro",
+    description:
+      "Fast-paced space combat game with procedural enemy generation and power-up systems.",
+    image: "/placeholder.svg",
+    technologies: ["Unity", "C#", "Procedural Generation"],
+    githubUrl: "https://github.com/username/space-shooter",
+  },
+  {
+    id: "3",
+    title: "Puzzle Master",
+    description:
+      "Mind-bending puzzle game with over 100 levels and intuitive touch controls.",
+    image: "/placeholder.svg",
+    technologies: ["Unity", "C#", "Mobile"],
+    liveUrl: "https://puzzle-master.app",
+  },
+  {
+    id: "4",
+    title: "Racing Legends",
+    description:
+      "3D racing game with realistic physics and customizable vehicles.",
+    image: "/placeholder.svg",
+    technologies: ["Unity", "C#", "3D Graphics"],
+    githubUrl: "https://github.com/username/racing-legends",
+  },
+];
+
+const certificates: Certificate[] = [
+  {
+    id: "1",
+    title: "Unity Certified Developer",
+    issuer: "Unity Technologies",
+    date: "2023",
+    image: "/placeholder.svg",
+    credentialUrl: "https://unity.com/credentials/123",
+  },
+  {
+    id: "2",
+    title: "Game Development Specialization",
+    issuer: "Coursera - University of Michigan",
+    date: "2023",
+    image: "/placeholder.svg",
+    credentialUrl: "https://coursera.org/credentials/456",
+  },
+  {
+    id: "3",
+    title: "C# Programming Certificate",
+    issuer: "Microsoft",
+    date: "2022",
+    image: "/placeholder.svg",
+    credentialUrl: "https://microsoft.com/credentials/789",
+  },
+  {
+    id: "4",
+    title: "3D Animation & Modeling",
+    issuer: "Blender Institute",
+    date: "2022",
+    image: "/placeholder.svg",
+  },
+];
 
 export default function Index() {
-  const [exampleFromServer, setExampleFromServer] = useState("");
-  // Fetch users on component mount
-  useEffect(() => {
-    fetchDemo();
-  }, []);
-
-  // Example of how to fetch data from the server (if needed)
-  const fetchDemo = async () => {
-    try {
-      const response = await fetch("/api/demo");
-      const data = (await response.json()) as DemoResponse;
-      setExampleFromServer(data.message);
-    } catch (error) {
-      console.error("Error fetching hello:", error);
-    }
-  };
-
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
-      <div className="text-center">
-        {/* TODO: FUSION_GENERATION_APP_PLACEHOLDER replace everything here with the actual app! */}
-        <h1 className="text-2xl font-semibold text-slate-800 flex items-center justify-center gap-3">
-          <svg
-            className="animate-spin h-8 w-8 text-slate-400"
-            viewBox="0 0 50 50"
-          >
-            <circle
-              className="opacity-30"
-              cx="25"
-              cy="25"
-              r="20"
-              stroke="currentColor"
-              strokeWidth="5"
-              fill="none"
-            />
-            <circle
-              className="text-slate-600"
-              cx="25"
-              cy="25"
-              r="20"
-              stroke="currentColor"
-              strokeWidth="5"
-              fill="none"
-              strokeDasharray="100"
-              strokeDashoffset="75"
-            />
-          </svg>
-          Generating your app...
-        </h1>
-        <p className="mt-4 text-slate-600 max-w-md">
-          Watch the chat on the left for updates that might need your attention
-          to finish generating
-        </p>
-        <p className="mt-4 hidden max-w-md">{exampleFromServer}</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+          <div className="font-semibold text-lg">Abhiraam B</div>
+          <div className="flex items-center gap-6">
+            <a
+              href="#games"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Games
+            </a>
+            <a
+              href="#certificates"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Certificates
+            </a>
+            <a
+              href="#contact"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Contact
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="pt-32 pb-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="max-w-3xl">
+            <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 animate-fade-in">
+              Game Developer &
+              <span className="text-primary block">Creative Technologist</span>
+            </h1>
+            <p className="text-xl text-muted-foreground mb-8 leading-relaxed animate-fade-in">
+              I craft immersive gaming experiences and interactive digital
+              worlds. Passionate about pushing the boundaries of what's possible
+              in game development.
+            </p>
+            <div className="flex items-center gap-4 text-muted-foreground mb-8 animate-fade-in">
+              <div className="flex items-center gap-2">
+                <MapPin className="w-4 h-4" />
+                <span>San Francisco, CA</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Mail className="w-4 h-4" />
+                <span>abhiraam@example.com</span>
+              </div>
+            </div>
+            <div className="flex items-center gap-4 animate-fade-in">
+              <a
+                href="#games"
+                className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors"
+              >
+                View My Games
+              </a>
+              <a
+                href="https://github.com/username"
+                className="border border-border px-6 py-3 rounded-lg font-medium hover:bg-accent transition-colors flex items-center gap-2"
+              >
+                <Github className="w-4 h-4" />
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Games Section */}
+      <section id="games" className="py-20 px-6 bg-muted/30">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Featured Games
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              A collection of games I've developed, showcasing different genres
+              and technical challenges.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            {games.map((game, index) => (
+              <div
+                key={game.id}
+                className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 animate-fade-in group"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="aspect-video bg-muted relative overflow-hidden">
+                  <img
+                    src={game.image}
+                    alt={game.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  {game.featured && (
+                    <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
+                      Featured
+                    </div>
+                  )}
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-foreground mb-2">
+                    {game.title}
+                  </h3>
+                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                    {game.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {game.technologies.map((tech) => (
+                      <span
+                        key={tech}
+                        className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-medium"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="flex items-center gap-3">
+                    {game.githubUrl && (
+                      <a
+                        href={game.githubUrl}
+                        className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+                      >
+                        <Github className="w-4 h-4" />
+                        <span className="text-sm">Code</span>
+                      </a>
+                    )}
+                    {game.liveUrl && (
+                      <a
+                        href={game.liveUrl}
+                        className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        <span className="text-sm">Play</span>
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Certificates Section */}
+      <section id="certificates" className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Certifications & Achievements
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Professional certifications and courses that have shaped my
+              expertise in game development.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {certificates.map((cert, index) => (
+              <div
+                key={cert.id}
+                className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-300 animate-fade-in group"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="w-16 h-16 bg-muted rounded-lg mb-4 flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+                  <Award className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="font-semibold text-foreground mb-2 leading-tight">
+                  {cert.title}
+                </h3>
+                <p className="text-muted-foreground text-sm mb-2">
+                  {cert.issuer}
+                </p>
+                <div className="flex items-center gap-2 text-muted-foreground text-sm mb-4">
+                  <Calendar className="w-3 h-3" />
+                  <span>{cert.date}</span>
+                </div>
+                {cert.credentialUrl && (
+                  <a
+                    href={cert.credentialUrl}
+                    className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm font-medium"
+                  >
+                    <ExternalLink className="w-3 h-3" />
+                    View Credential
+                  </a>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 px-6 bg-muted/30">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            Let's Create Something Amazing
+          </h2>
+          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Interested in collaborating on a game project or have a question?
+            I'd love to hear from you.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="mailto:abhiraam@example.com"
+              className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors flex items-center gap-2"
+            >
+              <Mail className="w-4 h-4" />
+              Get In Touch
+            </a>
+            <a
+              href="https://github.com/username"
+              className="border border-border px-8 py-3 rounded-lg font-medium hover:bg-accent transition-colors flex items-center gap-2"
+            >
+              <Github className="w-4 h-4" />
+              Follow on GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-8 px-6 border-t border-border">
+        <div className="max-w-6xl mx-auto text-center text-muted-foreground">
+          <p>&copy; 2024 Abhiraam B. All rights reserved.</p>
+        </div>
+      </footer>
     </div>
   );
 }
