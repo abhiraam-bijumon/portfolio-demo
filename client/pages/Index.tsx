@@ -419,10 +419,23 @@ export default function Index() {
             <a
               href="https://github.com/abhiraam-bijumon"
               target="_blank"
-              className="border border-border px-8 py-3 rounded-lg font-medium hover:bg-accent transition-colors flex items-center gap-2"
+              className="relative group border border-border px-8 py-3 rounded-lg font-medium hover:bg-accent transition-all duration-300 flex items-center gap-2 overflow-hidden cursor-pointer transform hover:scale-105 hover:shadow-lg"
             >
-              <Github className="w-4 h-4" />
-              Follow on GitHub
+              {/* Animated Border */}
+              <div className="absolute inset-0 rounded-lg">
+                <div className="absolute inset-0 rounded-lg border-2 border-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0.5 rounded-lg bg-background"></div>
+              </div>
+
+              {/* Shimmer Effect */}
+              <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-foreground/10 to-transparent skew-x-12"></div>
+
+              {/* Button Content */}
+              <span className="relative z-10 flex items-center gap-2">
+                <Github className="w-4 h-4 group-hover:rotate-12 group-hover:scale-110 transition-all duration-300" />
+                Follow on GitHub
+                <div className="w-1 h-1 bg-foreground/60 rounded-full opacity-0 group-hover:opacity-100 animate-pulse transition-opacity duration-300"></div>
+              </span>
             </a>
           </div>
         </div>
