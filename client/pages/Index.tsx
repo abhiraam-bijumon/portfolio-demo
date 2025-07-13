@@ -250,7 +250,7 @@ export default function Index() {
                   className="relative group inline-block cursor-pointer"
                 >
                   {/* Outer Glow */}
-                  <div className="absolute -inset-2 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 rounded-xl blur-xl opacity-0 group-hover:opacity-60 transition-all duration-500 animate-pulse group-hover:animate-none"></div>
+                  <div className="absolute -inset-2 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 rounded-xl blur-xl opacity-0 group-hover:opacity-60 transition-all duration-500"></div>
 
                   {/* Main Button */}
                   <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-500 transform group-hover:scale-110 group-hover:rotate-1 overflow-hidden shadow-2xl group-hover:shadow-blue-500/50">
