@@ -260,7 +260,7 @@ export default function Index() {
                     {/* Particle System */}
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                       <div
-                        className="absolute top-2 left-4 w-1 h-1 bg-white rounded-full animate-ping"
+                        className="absolute top-2 left-4 w-1 h-1 bg-white rounded-full"
                         style={{ animationDelay: "0s" }}
                       ></div>
                       <div
