@@ -11,9 +11,9 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    /* Modern light theme */
-    --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
+    /* Modern gradient theme */
+    --background: 222 84% 5%;
+    --foreground: 210 40% 98%;
 
     --card: 0 0% 100%;
     --card-foreground: 222 47% 11%;
