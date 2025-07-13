@@ -387,10 +387,21 @@ export default function Index() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="mailto:abhiraambijumon@gmail.com"
-              className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors flex items-center gap-2"
+              className="relative group bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition-all duration-300 overflow-hidden cursor-pointer transform hover:scale-105 hover:shadow-2xl hover:shadow-primary/25 flex items-center gap-2"
             >
-              <Mail className="w-4 h-4" />
-              Get In Touch
+              {/* Glow Effect */}
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg blur opacity-0 group-hover:opacity-75 transition-opacity duration-300"></div>
+
+              {/* Shimmer Effect */}
+              <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12"></div>
+
+              {/* Button Content */}
+              <span className="relative z-10 flex items-center gap-2">
+                <Mail className="w-4 h-4 group-hover:rotate-12 transition-transform duration-300" />
+                Get In Touch
+                {/* Floating sparkle */}
+                <div className="w-1 h-1 bg-white/80 rounded-full opacity-0 group-hover:opacity-100 animate-ping transition-opacity duration-300"></div>
+              </span>
             </a>
             <a
               href="https://github.com/abhiraam-bijumon"
