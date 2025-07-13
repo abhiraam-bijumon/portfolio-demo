@@ -132,7 +132,7 @@ export default function Index() {
         </div>
       </nav>
 
-                  {/* Hero Section */}
+                        {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
