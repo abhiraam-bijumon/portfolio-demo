@@ -310,7 +310,7 @@ export default function Index() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="mailto:abhiraam@example.com"
+              href="mailto:abhiraambijumon@gmail.com"
               className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors flex items-center gap-2"
             >
               <Mail className="w-4 h-4" />
