@@ -132,15 +132,31 @@ export default function Index() {
         </div>
       </nav>
 
-      {/* Hero Section */}
+            {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 animate-fade-in">
-              Game Developer &
-              <span className="text-primary block">Creative Technologist</span>
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed animate-fade-in">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            {/* Profile Picture */}
+            <div className="lg:col-span-4 flex justify-center lg:justify-start">
+              <div className="relative group animate-fade-in">
+                <div className="w-64 h-64 rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-primary/5 border border-border">
+                  <img
+                    src="/placeholder.svg"
+                    alt="Abhiraam B - Game Developer"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/10 to-transparent group-hover:from-primary/20 transition-all duration-300" />
+              </div>
+            </div>
+
+            {/* Content */}
+            <div className="lg:col-span-8">
+              <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 animate-fade-in">
+                Game Developer &
+                <span className="text-primary block">Creative Technologist</span>
+              </h1>
+                        <p className="text-xl text-muted-foreground mb-8 leading-relaxed animate-fade-in">
               I craft immersive gaming experiences and interactive digital
               worlds. Passionate about pushing the boundaries of what's possible
               in game development. I have been coding since 5 years old .
@@ -148,11 +164,11 @@ export default function Index() {
             <div className="flex items-center gap-4 text-muted-foreground mb-8 animate-fade-in">
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-                <span>San Antonio , TX</span>
+                                <span>San Antonio , TX</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>abhiraambijumon@gmail.com</span>
+                                <span>abhiraambijumon@gmail.com</span>
               </div>
             </div>
             <div className="flex items-center gap-4 animate-fade-in">
@@ -162,7 +178,7 @@ export default function Index() {
               >
                 View My Games
               </a>
-              <a
+                            <a
                 href="https://github.com/abhiraam-bijumon"
                 target="_blank"
                 className="border border-border px-6 py-3 rounded-lg font-medium hover:bg-accent transition-colors flex items-center gap-2"
@@ -310,14 +326,14 @@ export default function Index() {
             I'd love to hear from you.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
+                        <a
               href="mailto:abhiraambijumon@gmail.com"
               className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors flex items-center gap-2"
             >
               <Mail className="w-4 h-4" />
               Get In Touch
             </a>
-            <a
+                        <a
               href="https://github.com/abhiraam-bijumon"
               target="_blank"
               className="border border-border px-8 py-3 rounded-lg font-medium hover:bg-accent transition-colors flex items-center gap-2"
