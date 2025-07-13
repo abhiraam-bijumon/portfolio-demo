@@ -141,7 +141,7 @@ export default function Index() {
               <div className="relative group animate-fade-in">
                 <div className="w-64 h-64 rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-primary/5 border border-border">
                   <img
-                    src="/placeholder.svg"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fcbef59f32b8f46c3878540ede7051753%2F254a63b0e22f454ca1658a3b8434be20?format=webp&width=800"
                     alt="Abhiraam B - Game Developer"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
