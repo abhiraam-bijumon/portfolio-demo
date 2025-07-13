@@ -176,7 +176,7 @@ export default function Index() {
             <div className="lg:col-span-4 flex justify-center lg:justify-start">
               <div className="relative group animate-fade-in cursor-pointer">
                 {/* Glow Effect */}
-                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 rounded-2xl blur-lg opacity-0 group-hover:opacity-75 transition-opacity duration-500 animate-pulse group-hover:animate-none"></div>
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 rounded-2xl blur-lg opacity-0 group-hover:opacity-75 transition-opacity duration-500  group-hover:animate-none"></div>
 
                 {/* Main Image Container */}
                 <div className="relative w-64 h-64 rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-primary/5 border border-border group-hover:border-primary/50 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-primary/25">
@@ -264,7 +264,7 @@ export default function Index() {
                         style={{ animationDelay: "0s" }}
                       ></div>
                       <div
-                        className="absolute top-3 right-6 w-0.5 h-0.5 bg-blue-300 rounded-full animate-pulse"
+                        className="absolute top-3 right-6 w-0.5 h-0.5 bg-blue-300 rounded-full "
                         style={{ animationDelay: "0.2s" }}
                       ></div>
                       <div
@@ -320,7 +320,7 @@ export default function Index() {
                     {/* GitHub-themed particles */}
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                       <div
-                        className="absolute top-2 left-3 w-0.5 h-0.5 bg-green-400 rounded-full animate-pulse"
+                        className="absolute top-2 left-3 w-0.5 h-0.5 bg-green-400 rounded-full "
                         style={{ animationDelay: "0s" }}
                       ></div>
                       <div
@@ -507,7 +507,7 @@ export default function Index() {
                     style={{ animationDelay: "0s" }}
                   ></div>
                   <div
-                    className="absolute top-3 right-6 w-0.5 h-0.5 bg-blue-300 rounded-full animate-pulse"
+                    className="absolute top-3 right-6 w-0.5 h-0.5 bg-blue-300 rounded-full "
                     style={{ animationDelay: "0.15s" }}
                   ></div>
                   <div
@@ -551,7 +551,7 @@ export default function Index() {
                 {/* GitHub-themed particles */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <div
-                    className="absolute top-2 left-4 w-0.5 h-0.5 bg-green-400 rounded-full animate-pulse"
+                    className="absolute top-2 left-4 w-0.5 h-0.5 bg-green-400 rounded-full "
                     style={{ animationDelay: "0s" }}
                   ></div>
                   <div
@@ -563,7 +563,7 @@ export default function Index() {
                     style={{ animationDelay: "0.4s" }}
                   ></div>
                   <div
-                    className="absolute bottom-3 right-4 w-0.5 h-0.5 bg-purple-400 rounded-full animate-pulse"
+                    className="absolute bottom-3 right-4 w-0.5 h-0.5 bg-purple-400 rounded-full "
                     style={{ animationDelay: "0.6s" }}
                   ></div>
                 </div>
