@@ -112,27 +112,57 @@ export default function Index() {
           <div className="flex items-center gap-6">
             <a
               href="#games"
-              className="relative group text-muted-foreground hover:text-foreground transition-all duration-300 py-2 px-3 rounded-md hover:bg-accent/50"
+              className="relative group text-muted-foreground hover:text-foreground transition-all duration-500 py-2 px-4 rounded-lg cursor-pointer"
             >
-              <span className="relative z-10">Games</span>
-              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300 rounded-full"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              {/* Subtle glow on hover */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              {/* Background */}
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+              {/* Text */}
+              <span className="relative z-10 font-medium group-hover:text-blue-300 transition-colors duration-300">
+                Games
+              </span>
+
+              {/* Animated underline */}
+              <div className="absolute bottom-1 left-1/2 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-3/4 transition-all duration-500 rounded-full transform -translate-x-1/2"></div>
             </a>
             <a
               href="#certificates"
-              className="relative group text-muted-foreground hover:text-foreground transition-all duration-300 py-2 px-3 rounded-md hover:bg-accent/50"
+              className="relative group text-muted-foreground hover:text-foreground transition-all duration-500 py-2 px-4 rounded-lg cursor-pointer"
             >
-              <span className="relative z-10">Certificates</span>
-              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300 rounded-full"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              {/* Subtle glow on hover */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500/20 to-blue-500/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              {/* Background */}
+              <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/5 to-blue-500/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+              {/* Text */}
+              <span className="relative z-10 font-medium group-hover:text-emerald-300 transition-colors duration-300">
+                Certificates
+              </span>
+
+              {/* Animated underline */}
+              <div className="absolute bottom-1 left-1/2 w-0 h-0.5 bg-gradient-to-r from-emerald-500 to-blue-500 group-hover:w-3/4 transition-all duration-500 rounded-full transform -translate-x-1/2"></div>
             </a>
             <a
               href="#contact"
-              className="relative group text-muted-foreground hover:text-foreground transition-all duration-300 py-2 px-3 rounded-md hover:bg-accent/50"
+              className="relative group text-muted-foreground hover:text-foreground transition-all duration-500 py-2 px-4 rounded-lg cursor-pointer"
             >
-              <span className="relative z-10">Contact</span>
-              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300 rounded-full"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              {/* Subtle glow on hover */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              {/* Background */}
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 to-pink-500/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+              {/* Text */}
+              <span className="relative z-10 font-medium group-hover:text-purple-300 transition-colors duration-300">
+                Contact
+              </span>
+
+              {/* Animated underline */}
+              <div className="absolute bottom-1 left-1/2 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 group-hover:w-3/4 transition-all duration-500 rounded-full transform -translate-x-1/2"></div>
             </a>
           </div>
         </div>
