@@ -143,7 +143,7 @@ export default function Index() {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Fcbef59f32b8f46c3878540ede7051753%2F254a63b0e22f454ca1658a3b8434be20?format=webp&width=800"
                     alt="Abhiraam B - Game Developer"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-110 group-hover:rotate-2 transition-all duration-700 ease-out filter group-hover:brightness-110 group-hover:contrast-110"
                   />
                 </div>
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/10 to-transparent group-hover:from-primary/20 transition-all duration-300" />
