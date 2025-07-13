@@ -148,7 +148,7 @@ export default function Index() {
             <div className="flex items-center gap-4 text-muted-foreground mb-8 animate-fade-in">
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-                <span>San Francisco, CA</span>
+                <span>San Antonio , TX</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
@@ -163,7 +163,8 @@ export default function Index() {
                 View My Games
               </a>
               <a
-                href="https://github.com/username"
+                href="https://github.com/abhiraam-bijumon"
+                target="_blank"
                 className="border border-border px-6 py-3 rounded-lg font-medium hover:bg-accent transition-colors flex items-center gap-2"
               >
                 <Github className="w-4 h-4" />
@@ -317,7 +318,8 @@ export default function Index() {
               Get In Touch
             </a>
             <a
-              href="https://github.com/username"
+              href="https://github.com/abhiraam-bijumon"
+              target="_blank"
               className="border border-border px-8 py-3 rounded-lg font-medium hover:bg-accent transition-colors flex items-center gap-2"
             >
               <Github className="w-4 h-4" />
