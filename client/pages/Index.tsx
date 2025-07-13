@@ -272,7 +272,7 @@ export default function Index() {
                         style={{ animationDelay: "0.4s" }}
                       ></div>
                       <div
-                        className="absolute bottom-2 right-4 w-1 h-1 bg-white rounded-full animate-ping"
+                        className="absolute bottom-2 right-4 w-1 h-1 bg-white rounded-full "
                         style={{ animationDelay: "0.6s" }}
                       ></div>
                     </div>
@@ -328,7 +328,7 @@ export default function Index() {
                         style={{ animationDelay: "0.2s" }}
                       ></div>
                       <div
-                        className="absolute bottom-2 left-5 w-0.5 h-0.5 bg-blue-400 rounded-full animate-ping"
+                        className="absolute bottom-2 left-5 w-0.5 h-0.5 bg-blue-400 rounded-full "
                         style={{ animationDelay: "0.4s" }}
                       ></div>
                     </div>
@@ -503,7 +503,7 @@ export default function Index() {
                 {/* Particle System */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <div
-                    className="absolute top-2 left-4 w-1 h-1 bg-emerald-300 rounded-full animate-ping"
+                    className="absolute top-2 left-4 w-1 h-1 bg-emerald-300 rounded-full "
                     style={{ animationDelay: "0s" }}
                   ></div>
                   <div
@@ -515,7 +515,7 @@ export default function Index() {
                     style={{ animationDelay: "0.3s" }}
                   ></div>
                   <div
-                    className="absolute bottom-2 right-4 w-1 h-1 bg-white rounded-full animate-ping"
+                    className="absolute bottom-2 right-4 w-1 h-1 bg-white rounded-full "
                     style={{ animationDelay: "0.45s" }}
                   ></div>
                 </div>
@@ -559,7 +559,7 @@ export default function Index() {
                     style={{ animationDelay: "0.2s" }}
                   ></div>
                   <div
-                    className="absolute bottom-2 left-6 w-0.5 h-0.5 bg-blue-400 rounded-full animate-ping"
+                    className="absolute bottom-2 left-6 w-0.5 h-0.5 bg-blue-400 rounded-full "
                     style={{ animationDelay: "0.4s" }}
                   ></div>
                   <div
@@ -577,7 +577,7 @@ export default function Index() {
 
                   {/* Follow indicator */}
                   <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="w-1 h-1 bg-green-400 rounded-full animate-ping"></div>
+                    <div className="w-1 h-1 bg-green-400 rounded-full "></div>
                     <span className="text-green-400 text-xs font-mono">+</span>
                   </div>
                 </span>
