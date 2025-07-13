@@ -211,9 +211,30 @@ export default function Index() {
               <div className="flex items-center gap-4 animate-fade-in">
                 <a
                   href="#games"
-                  className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors"
+                  className="relative group bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-all duration-300 overflow-hidden cursor-pointer transform hover:scale-105 hover:shadow-2xl hover:shadow-primary/25"
                 >
-                  View My Games
+                  {/* Glow Effect */}
+                  <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg blur opacity-0 group-hover:opacity-75 transition-opacity duration-300"></div>
+
+                  {/* Shimmer Effect */}
+                  <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12"></div>
+
+                  {/* Button Content */}
+                  <span className="relative z-10 flex items-center gap-2">
+                    View My Games
+                    <div
+                      className="w-1 h-1 bg-white/60 rounded-full opacity-0 group-hover:opacity-100 animate-bounce transition-opacity duration-300"
+                      style={{ animationDelay: "0.1s" }}
+                    ></div>
+                    <div
+                      className="w-1 h-1 bg-white/60 rounded-full opacity-0 group-hover:opacity-100 animate-bounce transition-opacity duration-300"
+                      style={{ animationDelay: "0.2s" }}
+                    ></div>
+                    <div
+                      className="w-1 h-1 bg-white/60 rounded-full opacity-0 group-hover:opacity-100 animate-bounce transition-opacity duration-300"
+                      style={{ animationDelay: "0.3s" }}
+                    ></div>
+                  </span>
                 </a>
                 <a
                   href="https://github.com/abhiraam-bijumon"
