@@ -78,29 +78,6 @@ const certificates: Certificate[] = [
     image: "/placeholder.svg",
     credentialUrl: "https://unity.com/credentials/123",
   },
-  {
-    id: "2",
-    title: "Game Development Specialization",
-    issuer: "Coursera - University of Michigan",
-    date: "2023",
-    image: "/placeholder.svg",
-    credentialUrl: "https://coursera.org/credentials/456",
-  },
-  {
-    id: "3",
-    title: "C# Programming Certificate",
-    issuer: "Microsoft",
-    date: "2022",
-    image: "/placeholder.svg",
-    credentialUrl: "https://microsoft.com/credentials/789",
-  },
-  {
-    id: "4",
-    title: "3D Animation & Modeling",
-    issuer: "Blender Institute",
-    date: "2022",
-    image: "/placeholder.svg",
-  },
 ];
 
 export default function Index() {
