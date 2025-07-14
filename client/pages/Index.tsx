@@ -517,7 +517,7 @@ export default function Index() {
                     className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm font-medium"
                   >
                     <ExternalLink className="w-3 h-3" />
-                    View Credential
+                    View Credentia
                   </a>
                 )}
               </div>
