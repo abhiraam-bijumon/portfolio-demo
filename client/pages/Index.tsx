@@ -111,31 +111,32 @@ export default function Index() {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
-                  {/* Cursor Glow Effect */}
+      {/* Cursor Glow Effect */}
       <div
         className="fixed pointer-events-none z-30 opacity-50"
         style={{
           left: mousePosition.x - 150,
           top: mousePosition.y - 150,
-          width: '300px',
-          height: '300px',
-          background: 'radial-gradient(300px circle at center, rgba(59, 130, 246, 0.15), rgba(147, 51, 234, 0.1), rgba(59, 130, 246, 0.08), transparent 70%)',
-          borderRadius: '50%',
-          filter: 'blur(1px)',
-          transition: 'all 0.1s ease-out',
+          width: "300px",
+          height: "300px",
+          background:
+            "radial-gradient(300px circle at center, rgba(59, 130, 246, 0.15), rgba(147, 51, 234, 0.1), rgba(59, 130, 246, 0.08), transparent 70%)",
+          borderRadius: "50%",
+          filter: "blur(1px)",
+          transition: "all 0.1s ease-out",
         }}
       />
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="font-semibold text-lg">Abhiraam B</div>
-                              <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6">
             <a
               href="#games"
               className="relative group text-muted-foreground hover:text-foreground transition-all duration-500 py-2 px-4 rounded-lg cursor-pointer"
@@ -147,7 +148,9 @@ export default function Index() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
               {/* Text */}
-              <span className="relative z-10 font-medium group-hover:text-blue-300 transition-colors duration-300">Games</span>
+              <span className="relative z-10 font-medium group-hover:text-blue-300 transition-colors duration-300">
+                Games
+              </span>
 
               {/* Animated underline */}
               <div className="absolute bottom-1 left-1/2 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-3/4 transition-all duration-500 rounded-full transform -translate-x-1/2"></div>
@@ -163,7 +166,9 @@ export default function Index() {
               <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/5 to-blue-500/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
               {/* Text */}
-              <span className="relative z-10 font-medium group-hover:text-emerald-300 transition-colors duration-300">Certificates</span>
+              <span className="relative z-10 font-medium group-hover:text-emerald-300 transition-colors duration-300">
+                Certificates
+              </span>
 
               {/* Animated underline */}
               <div className="absolute bottom-1 left-1/2 w-0 h-0.5 bg-gradient-to-r from-emerald-500 to-blue-500 group-hover:w-3/4 transition-all duration-500 rounded-full transform -translate-x-1/2"></div>
@@ -179,7 +184,9 @@ export default function Index() {
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 to-pink-500/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
               {/* Text */}
-              <span className="relative z-10 font-medium group-hover:text-purple-300 transition-colors duration-300">Contact</span>
+              <span className="relative z-10 font-medium group-hover:text-purple-300 transition-colors duration-300">
+                Contact
+              </span>
 
               {/* Animated underline */}
               <div className="absolute bottom-1 left-1/2 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 group-hover:w-3/4 transition-all duration-500 rounded-full transform -translate-x-1/2"></div>
@@ -232,15 +239,6 @@ export default function Index() {
                     ></div>
                   </div>
                 </div>
-
-                
-              </div>
-            </div>
-
-                            {/* Game Dev Badge */}
-                <div className="absolute -bottom-2 -right-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-full text-xs font-semibold opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500 shadow-lg">
-                  Game Dev
-                </div>
               </div>
             </div>
 
@@ -269,36 +267,58 @@ export default function Index() {
                 </div>
               </div>
               <div className="flex items-center gap-4 animate-fade-in">
-                                                <a
+                <a
                   href="#games"
                   className="relative group inline-block cursor-pointer"
                 >
-                                    {/* Outer Glow */}
+                  {/* Outer Glow */}
                   <div className="absolute -inset-2 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 rounded-xl blur-xl opacity-0 group-hover:opacity-60 transition-all duration-500"></div>
 
                   {/* Main Button */}
                   <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-500 transform group-hover:scale-110 group-hover:rotate-1 overflow-hidden shadow-2xl group-hover:shadow-blue-500/50">
-
                     {/* Inner Shimmer */}
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 skew-x-12"></div>
 
                     {/* Particle System */}
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <div                         className="absolute top-2 left-4 w-1 h-1 bg-white rounded-full" style={{animationDelay: '0s'}}></div>
-                      <div className="absolute top-3 right-6 w-0.5 h-0.5 bg-blue-300 rounded-full " style={{animationDelay: '0.2s'}}></div>
-                      <div className="absolute bottom-3 left-6 w-0.5 h-0.5 bg-purple-300 rounded-full animate-bounce" style={{animationDelay: '0.4s'}}></div>
-                      <div className="absolute bottom-2 right-4 w-1 h-1 bg-white rounded-full " style={{animationDelay: '0.6s'}}></div>
+                      <div
+                        className="absolute top-2 left-4 w-1 h-1 bg-white rounded-full"
+                        style={{ animationDelay: "0s" }}
+                      ></div>
+                      <div
+                        className="absolute top-3 right-6 w-0.5 h-0.5 bg-blue-300 rounded-full "
+                        style={{ animationDelay: "0.2s" }}
+                      ></div>
+                      <div
+                        className="absolute bottom-3 left-6 w-0.5 h-0.5 bg-purple-300 rounded-full animate-bounce"
+                        style={{ animationDelay: "0.4s" }}
+                      ></div>
+                      <div
+                        className="absolute bottom-2 right-4 w-1 h-1 bg-white rounded-full "
+                        style={{ animationDelay: "0.6s" }}
+                      ></div>
                     </div>
 
                     {/* Text with Enhanced Effects */}
                     <span className="relative z-10 flex items-center gap-3 text-lg tracking-wide">
-                      <span className="group-hover:text-blue-100 transition-colors duration-300">View My Games</span>
+                      <span className="group-hover:text-blue-100 transition-colors duration-300">
+                        View My Games
+                      </span>
 
                       {/* Animated Dots */}
                       <div className="flex gap-1">
-                        <div className="w-2 h-2 bg-white/80 rounded-full opacity-60 group-hover:opacity-100 group-hover:animate-bounce transition-all duration-300" style={{animationDelay: '0.1s'}}></div>
-                        <div className="w-2 h-2 bg-white/80 rounded-full opacity-60 group-hover:opacity-100 group-hover:animate-bounce transition-all duration-300" style={{animationDelay: '0.2s'}}></div>
-                        <div className="w-2 h-2 bg-white/80 rounded-full opacity-60 group-hover:opacity-100 group-hover:animate-bounce transition-all duration-300" style={{animationDelay: '0.3s'}}></div>
+                        <div
+                          className="w-2 h-2 bg-white/80 rounded-full opacity-60 group-hover:opacity-100 group-hover:animate-bounce transition-all duration-300"
+                          style={{ animationDelay: "0.1s" }}
+                        ></div>
+                        <div
+                          className="w-2 h-2 bg-white/80 rounded-full opacity-60 group-hover:opacity-100 group-hover:animate-bounce transition-all duration-300"
+                          style={{ animationDelay: "0.2s" }}
+                        ></div>
+                        <div
+                          className="w-2 h-2 bg-white/80 rounded-full opacity-60 group-hover:opacity-100 group-hover:animate-bounce transition-all duration-300"
+                          style={{ animationDelay: "0.3s" }}
+                        ></div>
                       </div>
                     </span>
 
@@ -306,7 +326,7 @@ export default function Index() {
                     <div className="absolute inset-0 rounded-xl border-2 border-white/20 group-hover:border-white/40 transition-colors duration-300"></div>
                   </div>
                 </a>
-                                                <a
+                <a
                   href="https://github.com/abhiraam-bijumon"
                   target="_blank"
                   className="relative group inline-block cursor-pointer"
@@ -316,21 +336,31 @@ export default function Index() {
 
                   {/* Main Button */}
                   <div className="relative bg-gradient-to-r from-slate-800 via-slate-900 to-slate-800 border-2 border-slate-600 group-hover:border-slate-400 text-white px-6 py-3 rounded-xl font-medium transition-all duration-500 transform group-hover:scale-105 group-hover:rotate-1 overflow-hidden shadow-xl group-hover:shadow-slate-500/30">
-
                     {/* Inner Glow */}
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-800 skew-x-12"></div>
 
                     {/* GitHub-themed particles */}
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <div className="absolute top-2 left-3 w-0.5 h-0.5 bg-green-400 rounded-full " style={{animationDelay: '0s'}}></div>
-                      <div className="absolute top-3 right-4 w-0.5 h-0.5 bg-slate-300 rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
-                      <div className="absolute bottom-2 left-5 w-0.5 h-0.5 bg-blue-400 rounded-full " style={{animationDelay: '0.4s'}}></div>
+                      <div
+                        className="absolute top-2 left-3 w-0.5 h-0.5 bg-green-400 rounded-full "
+                        style={{ animationDelay: "0s" }}
+                      ></div>
+                      <div
+                        className="absolute top-3 right-4 w-0.5 h-0.5 bg-slate-300 rounded-full animate-bounce"
+                        style={{ animationDelay: "0.2s" }}
+                      ></div>
+                      <div
+                        className="absolute bottom-2 left-5 w-0.5 h-0.5 bg-blue-400 rounded-full "
+                        style={{ animationDelay: "0.4s" }}
+                      ></div>
                     </div>
 
                     {/* Text Content */}
                     <span className="relative z-10 flex items-center gap-2 text-base">
                       <Github className="w-5 h-5 group-hover:rotate-[360deg] group-hover:scale-125 transition-all duration-700 drop-shadow-lg" />
-                      <span className="group-hover:text-slate-200 transition-colors duration-300">GitHub</span>
+                      <span className="group-hover:text-slate-200 transition-colors duration-300">
+                        GitHub
+                      </span>
 
                       {/* Code bracket effect */}
                       <div className="flex opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -359,7 +389,7 @@ export default function Index() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-                        {games.map((game, index) => (
+            {games.map((game, index) => (
               <div
                 key={game.id}
                 className="relative group animate-fade-in cursor-pointer"
@@ -368,9 +398,8 @@ export default function Index() {
                 {/* Glow Effect */}
                 <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 rounded-2xl blur-lg opacity-0 group-hover:opacity-75 transition-opacity duration-500"></div>
 
-                                                {/* Main Card Container */}
+                {/* Main Card Container */}
                 <div className="relative bg-card border border-border rounded-2xl overflow-hidden group-hover:border-primary/50 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-primary/25 transform group-hover:scale-105 group-hover:rotate-1">
-
                   {/* Game Image Section */}
                   <div className="aspect-video bg-muted relative overflow-hidden">
                     <img
@@ -460,8 +489,6 @@ export default function Index() {
                       )}
                     </div>
                   </div>
-
-                                    
                 </div>
               </div>
             ))}
@@ -528,31 +555,44 @@ export default function Index() {
             I'd love to hear from you.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                                    <a
+            <a
               href="mailto:abhiraambijumon@gmail.com"
               className="relative group inline-block cursor-pointer"
             >
-                            {/* Outer Glow */}
+              {/* Outer Glow */}
               <div className="absolute -inset-2 bg-gradient-to-r from-emerald-500 via-blue-600 to-purple-600 rounded-xl blur-xl opacity-0 group-hover:opacity-70 transition-all duration-500"></div>
 
               {/* Main Button */}
               <div className="relative bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-500 transform group-hover:scale-110 group-hover:-rotate-1 overflow-hidden shadow-2xl group-hover:shadow-emerald-500/50">
-
                 {/* Inner Shimmer */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 skew-x-12"></div>
 
                 {/* Particle System */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <div className="absolute top-2 left-4 w-1 h-1 bg-emerald-300 rounded-full " style={{animationDelay: '0s'}}></div>
-                  <div className="absolute top-3 right-6 w-0.5 h-0.5 bg-blue-300 rounded-full " style={{animationDelay: '0.15s'}}></div>
-                  <div className="absolute bottom-3 left-6 w-0.5 h-0.5 bg-purple-300 rounded-full animate-bounce" style={{animationDelay: '0.3s'}}></div>
-                  <div className="absolute bottom-2 right-4 w-1 h-1 bg-white rounded-full " style={{animationDelay: '0.45s'}}></div>
+                  <div
+                    className="absolute top-2 left-4 w-1 h-1 bg-emerald-300 rounded-full "
+                    style={{ animationDelay: "0s" }}
+                  ></div>
+                  <div
+                    className="absolute top-3 right-6 w-0.5 h-0.5 bg-blue-300 rounded-full "
+                    style={{ animationDelay: "0.15s" }}
+                  ></div>
+                  <div
+                    className="absolute bottom-3 left-6 w-0.5 h-0.5 bg-purple-300 rounded-full animate-bounce"
+                    style={{ animationDelay: "0.3s" }}
+                  ></div>
+                  <div
+                    className="absolute bottom-2 right-4 w-1 h-1 bg-white rounded-full "
+                    style={{ animationDelay: "0.45s" }}
+                  ></div>
                 </div>
 
                 {/* Text with Enhanced Effects */}
                 <span className="relative z-10 flex items-center gap-3 text-lg tracking-wide">
                   <Mail className="w-5 h-5 group-hover:rotate-12 group-hover:scale-125 transition-all duration-500 drop-shadow-lg" />
-                  <span className="group-hover:text-emerald-100 transition-colors duration-300">Get In Touch</span>
+                  <span className="group-hover:text-emerald-100 transition-colors duration-300">
+                    Get In Touch
+                  </span>
 
                   {/* Magic Sparkle */}
                   <div className="w-2 h-2 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-spin transition-all duration-500"></div>
@@ -562,7 +602,7 @@ export default function Index() {
                 <div className="absolute inset-0 rounded-xl border-2 border-white/20 group-hover:border-white/50 transition-colors duration-300"></div>
               </div>
             </a>
-                                    <a
+            <a
               href="https://github.com/abhiraam-bijumon"
               target="_blank"
               className="relative group inline-block cursor-pointer"
@@ -572,22 +612,35 @@ export default function Index() {
 
               {/* Main Button */}
               <div className="relative bg-gradient-to-r from-slate-800 via-slate-900 to-slate-800 border-2 border-slate-600 group-hover:border-slate-400 text-white px-8 py-3 rounded-xl font-medium transition-all duration-500 transform group-hover:scale-105 group-hover:-rotate-1 overflow-hidden shadow-xl group-hover:shadow-slate-500/30">
-
                 {/* Inner Glow */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-800 skew-x-12"></div>
 
                 {/* GitHub-themed particles */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <div className="absolute top-2 left-4 w-0.5 h-0.5 bg-green-400 rounded-full " style={{animationDelay: '0s'}}></div>
-                  <div className="absolute top-3 right-6 w-0.5 h-0.5 bg-slate-300 rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
-                  <div className="absolute bottom-2 left-6 w-0.5 h-0.5 bg-blue-400 rounded-full " style={{animationDelay: '0.4s'}}></div>
-                  <div className="absolute bottom-3 right-4 w-0.5 h-0.5 bg-purple-400 rounded-full " style={{animationDelay: '0.6s'}}></div>
+                  <div
+                    className="absolute top-2 left-4 w-0.5 h-0.5 bg-green-400 rounded-full "
+                    style={{ animationDelay: "0s" }}
+                  ></div>
+                  <div
+                    className="absolute top-3 right-6 w-0.5 h-0.5 bg-slate-300 rounded-full animate-bounce"
+                    style={{ animationDelay: "0.2s" }}
+                  ></div>
+                  <div
+                    className="absolute bottom-2 left-6 w-0.5 h-0.5 bg-blue-400 rounded-full "
+                    style={{ animationDelay: "0.4s" }}
+                  ></div>
+                  <div
+                    className="absolute bottom-3 right-4 w-0.5 h-0.5 bg-purple-400 rounded-full "
+                    style={{ animationDelay: "0.6s" }}
+                  ></div>
                 </div>
 
                 {/* Text Content */}
                 <span className="relative z-10 flex items-center gap-3 text-base">
                   <Github className="w-5 h-5 group-hover:rotate-[360deg] group-hover:scale-125 transition-all duration-700 drop-shadow-lg" />
-                  <span className="group-hover:text-slate-200 transition-colors duration-300">Follow on GitHub</span>
+                  <span className="group-hover:text-slate-200 transition-colors duration-300">
+                    Follow on GitHub
+                  </span>
 
                   {/* Follow indicator */}
                   <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
