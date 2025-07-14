@@ -72,11 +72,11 @@ const games: Game[] = [
 const certificates: Certificate[] = [
   {
     id: "1",
-    title: "Unity Developer",
-    issuer: "Unity Technologies",
-    date: "2023",
+    title: "Roblox Game: 2K+ Visits",
+    issuer: "Roblox Platform",
+    date: "2024",
     image: "/placeholder.svg",
-    credentialUrl: "https://unity.com/credentials/123",
+    credentialUrl: "https://roblox.com/games/your-game",
   },
 ];
 
