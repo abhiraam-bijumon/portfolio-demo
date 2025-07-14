@@ -227,7 +227,7 @@ export default function Index() {
             {/* Content */}
             <div className="lg:col-span-8">
               <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 animate-fade-in">
-                Game Developer &
+                Unity & Roblox Developer
                 <span className="text-primary block">
                   Creative Technologist
                 </span>
