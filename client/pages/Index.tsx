@@ -31,13 +31,12 @@ interface Certificate {
 const games: Game[] = [
   {
     id: "1",
-    title: "Pixel Adventure",
+    title: "Roblox Adventure World",
     description:
-      "A 2D platformer game built with Unity featuring custom physics, level editor, and engaging gameplay mechanics.",
+      "An exciting adventure game on Roblox featuring custom scripting, interactive NPCs, and engaging quests. Achieved 2,000+ visits!",
     image: "/placeholder.svg",
-    technologies: ["Unity", "C#", "2D Physics"],
-    githubUrl: "https://github.com/username/pixel-adventure",
-    liveUrl: "https://pixel-adventure.game",
+    technologies: ["Roblox Studio", "Lua", "Game Design"],
+    liveUrl: "https://roblox.com/games/your-game",
     featured: true,
   },
   {
