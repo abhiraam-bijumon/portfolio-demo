@@ -119,16 +119,16 @@ export default function Index() {
     <div className="min-h-screen bg-background relative overflow-hidden">
       {/* Cursor Glow Effect */}
       <div
-        className="fixed pointer-events-none z-30 opacity-90"
+        className="fixed pointer-events-none z-30 opacity-50"
         style={{
           left: mousePosition.x - 150,
           top: mousePosition.y - 150,
           width: "300px",
           height: "300px",
           background:
-            "radial-gradient(300px circle at center, rgba(59, 130, 246, 0.4), rgba(147, 51, 234, 0.3), rgba(59, 130, 246, 0.2), transparent 60%)",
+            "radial-gradient(300px circle at center, rgba(59, 130, 246, 0.15), rgba(147, 51, 234, 0.1), rgba(59, 130, 246, 0.08), transparent 70%)",
           borderRadius: "50%",
-          filter: "blur(0.5px)",
+          filter: "blur(1px)",
           transition: "all 0.1s ease-out",
         }}
       />
