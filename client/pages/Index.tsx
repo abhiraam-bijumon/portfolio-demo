@@ -88,6 +88,14 @@ const certificates: Certificate[] = [
     credentialUrl:
       "https://www.roblox.com/games/114930253549665/Drive-In-To-Nothing",
   },
+  {
+    id: "2",
+    title: "Unity Game Development",
+    issuer: "Unity Technologies",
+    date: "2024",
+    image: "/placeholder.svg",
+    credentialUrl: "https://unity.com/learn",
+  },
 ];
 
 export default function Index() {
