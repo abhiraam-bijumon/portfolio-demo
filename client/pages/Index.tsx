@@ -59,7 +59,7 @@ const games: Game[] = [
     githubUrl: "https://github.com/username/space-shooter",
   },
   {
-    id: "3",
+    id: "4",
     title: "Puzzle Master",
     description:
       "Mind-bending puzzle game with over 100 levels and intuitive touch controls.",
@@ -68,7 +68,7 @@ const games: Game[] = [
     liveUrl: "https://puzzle-master.app",
   },
   {
-    id: "4",
+    id: "5",
     title: "Racing Legends",
     description:
       "3D racing game with realistic physics and customizable vehicles.",
