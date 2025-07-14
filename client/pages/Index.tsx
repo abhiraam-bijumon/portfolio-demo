@@ -72,7 +72,7 @@ const games: Game[] = [
 const certificates: Certificate[] = [
   {
     id: "1",
-    title: "Unity Certified Developer",
+    title: "Unity Developer",
     issuer: "Unity Technologies",
     date: "2023",
     image: "/placeholder.svg",
