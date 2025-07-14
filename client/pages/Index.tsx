@@ -31,12 +31,13 @@ interface Certificate {
 const games: Game[] = [
   {
     id: "1",
-    title: "Roblox Adventure World",
+    title: "Drive Into Nothing",
     description:
-      "An exciting adventure game on Roblox featuring custom scripting, interactive NPCs, and engaging quests. Achieved 2,000+ visits!",
-    image: "/placeholder.svg",
+      "An exciting driving game on Roblox that has various levels and is a lot of fun. Achieved 2,000+ visits!",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fcbef59f32b8f46c3878540ede7051753%2Fbd5d064fec154237ae2daf145e3ad6ea?format=webp&width=800",
     technologies: ["Roblox Studio", "Lua", "Game Design"],
-    liveUrl: "https://roblox.com/games/your-game",
+    liveUrl: "https://www.roblox.com/games/114930253549665/Drive-In-To-Nothing",
     featured: true,
   },
   {
