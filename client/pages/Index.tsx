@@ -239,6 +239,11 @@ export default function Index() {
                     ></div>
                   </div>
                 </div>
+
+                {/* Game Dev Badge */}
+                <div className="absolute -bottom-2 -right-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-full text-xs font-semibold opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500 shadow-lg">
+                  Game Dev
+                </div>
               </div>
             </div>
 
