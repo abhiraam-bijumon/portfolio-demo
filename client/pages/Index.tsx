@@ -233,10 +233,9 @@ export default function Index() {
                 </span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed animate-fade-in">
-                I craft immersive gaming experiences and interactive digital
-                worlds. Passionate about pushing the boundaries of what's
-                possible in game development. I have been coding since 5 years
-                old .
+                I create engaging Roblox games and interactive experiences.
+                Passionate about building fun gameplay mechanics and worlds that
+                bring players together. I have been coding since 5 years old.
               </p>
               <div className="flex items-center gap-4 text-muted-foreground mb-8 animate-fade-in">
                 <div className="flex items-center gap-2">
