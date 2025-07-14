@@ -41,6 +41,16 @@ const games: Game[] = [
   },
   {
     id: "2",
+    title: "Unity Platformer Adventure",
+    description:
+      "A polished 2D platformer built with Unity featuring custom physics, smooth animations, and engaging level design.",
+    image: "/placeholder.svg",
+    technologies: ["Unity", "C#", "2D Physics", "Animation"],
+    githubUrl: "https://github.com/abhiraam-bijumon/unity-platformer",
+    featured: true,
+  },
+  {
+    id: "3",
     title: "Space Shooter Pro",
     description:
       "Fast-paced space combat game with procedural enemy generation and power-up systems.",
