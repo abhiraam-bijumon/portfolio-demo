@@ -397,57 +397,107 @@ export default function Index() {
             {games.map((game, index) => (
               <div
                 key={game.id}
-                className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 animate-fade-in group"
+                className="relative group animate-fade-in cursor-pointer"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="aspect-video bg-muted relative overflow-hidden">
-                  <img
-                    src={game.image}
-                    alt={game.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  {game.featured && (
-                    <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
-                      Featured
+                {/* Glow Effect */}
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 rounded-2xl blur-lg opacity-0 group-hover:opacity-75 transition-opacity duration-500"></div>
+
+                {/* Main Card Container */}
+                <div className="relative bg-card border border-border rounded-2xl overflow-hidden group-hover:border-primary/50 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-primary/25 transform group-hover:scale-105 group-hover:rotate-1">
+                  {/* Game Image Section */}
+                  <div className="aspect-video bg-muted relative overflow-hidden">
+                    <img
+                      src={game.image}
+                      alt={game.title}
+                      className="w-full h-full object-cover group-hover:scale-110 group-hover:rotate-2 transition-all duration-700 ease-out filter group-hover:brightness-110 group-hover:contrast-110"
+                    />
+
+                    {/* Shimmer Effect */}
+                    <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12"></div>
+
+                    {/* Enhanced Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent group-hover:from-primary/30 group-hover:via-purple-500/20 group-hover:to-blue-500/20 transition-all duration-500"></div>
+
+                    {/* Floating Particles Effect */}
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      <div
+                        className="absolute top-4 left-4 w-1 h-1 bg-blue-400 rounded-full animate-bounce"
+                        style={{ animationDelay: "0s" }}
+                      ></div>
+                      <div
+                        className="absolute top-8 right-6 w-1 h-1 bg-purple-400 rounded-full animate-bounce"
+                        style={{ animationDelay: "0.2s" }}
+                      ></div>
+                      <div
+                        className="absolute bottom-6 left-8 w-1 h-1 bg-blue-300 rounded-full animate-bounce"
+                        style={{ animationDelay: "0.4s" }}
+                      ></div>
+                      <div
+                        className="absolute bottom-4 right-4 w-1 h-1 bg-purple-300 rounded-full animate-bounce"
+                        style={{ animationDelay: "0.6s" }}
+                      ></div>
                     </div>
-                  )}
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-foreground mb-2">
-                    {game.title}
-                  </h3>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
-                    {game.description}
-                  </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {game.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-medium"
-                      >
-                        {tech}
-                      </span>
-                    ))}
+
+                    {/* Featured Badge */}
+                    {game.featured && (
+                      <div className="absolute top-4 left-4 bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        ⭐ Featured
+                      </div>
+                    )}
                   </div>
-                  <div className="flex items-center gap-3">
-                    {game.githubUrl && (
-                      <a
-                        href={game.githubUrl}
-                        className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-                      >
-                        <Github className="w-4 h-4" />
-                        <span className="text-sm">Code</span>
-                      </a>
-                    )}
-                    {game.liveUrl && (
-                      <a
-                        href={game.liveUrl}
-                        className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-                      >
-                        <ExternalLink className="w-4 h-4" />
-                        <span className="text-sm">Play</span>
-                      </a>
-                    )}
+
+                  {/* Card Content */}
+                  <div className="relative p-6">
+                    {/* Title */}
+                    <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
+                      {game.title}
+                    </h3>
+
+                    {/* Description */}
+                    <p className="text-muted-foreground mb-4 leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
+                      {game.description}
+                    </p>
+
+                    {/* Tech Stack */}
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {game.technologies.map((tech, techIndex) => (
+                        <span
+                          key={tech}
+                          className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-medium group-hover:bg-primary/20 group-hover:text-primary transition-all duration-300 hover:scale-110"
+                          style={{ transitionDelay: `${techIndex * 50}ms` }}
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+
+                    {/* Action Links */}
+                    <div className="flex items-center gap-4">
+                      {game.githubUrl && (
+                        <a
+                          href={game.githubUrl}
+                          className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-all duration-300 group/link"
+                        >
+                          <Github className="w-4 h-4 group-hover/link:rotate-12 group-hover/link:scale-110 transition-all duration-300" />
+                          <span className="text-sm font-medium">Code</span>
+                        </a>
+                      )}
+                      {game.liveUrl && (
+                        <a
+                          href={game.liveUrl}
+                          className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-all duration-300 group/link"
+                        >
+                          <ExternalLink className="w-4 h-4 group-hover/link:rotate-12 group-hover/link:scale-110 transition-all duration-300" />
+                          <span className="text-sm font-medium">Play</span>
+                        </a>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Game Type Badge */}
+                  <div className="absolute -bottom-2 -right-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-full text-xs font-semibold opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500 shadow-lg">
+                    🎮 Game
                   </div>
                 </div>
               </div>
