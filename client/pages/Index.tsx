@@ -6,6 +6,7 @@ import {
   MapPin,
   Mail,
 } from "lucide-react";
+import { useEffect, useState } from "react";
 
 interface Game {
   id: string;
