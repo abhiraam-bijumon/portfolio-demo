@@ -104,8 +104,34 @@ const certificates: Certificate[] = [
 ];
 
 export default function Index() {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      setMousePosition({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative overflow-hidden">
+      {/* Cursor Glow Effect */}
+      <div
+        className="fixed pointer-events-none z-30 opacity-60"
+        style={{
+          left: mousePosition.x - 300,
+          top: mousePosition.y - 300,
+          width: "600px",
+          height: "600px",
+          background:
+            "radial-gradient(600px circle at center, rgba(59, 130, 246, 0.15), rgba(147, 51, 234, 0.1), rgba(59, 130, 246, 0.05), transparent 70%)",
+          borderRadius: "50%",
+          filter: "blur(1px)",
+          transition: "all 0.1s ease-out",
+        }}
+      />
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
