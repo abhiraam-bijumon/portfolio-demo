@@ -404,7 +404,7 @@ export default function Index() {
                 <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 rounded-2xl blur-lg opacity-0 group-hover:opacity-75 transition-opacity duration-500"></div>
 
                 {/* Main Card Container */}
-                <div className="relative bg-card border border-border rounded-2xl group-hover:border-primary/50 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-primary/25 transform group-hover:scale-105 group-hover:rotate-1 overflow-visible">
+                <div className="relative bg-card border border-border rounded-2xl overflow-hidden group-hover:border-primary/50 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-primary/25 transform group-hover:scale-105 group-hover:rotate-1">
                   {/* Game Image Section */}
                   <div className="aspect-video bg-muted relative overflow-hidden">
                     <img
