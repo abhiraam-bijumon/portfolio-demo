@@ -42,40 +42,12 @@ const games: Game[] = [
   },
   {
     id: "2",
-    title: "Unity Platformer Adventure",
+    title: "Platformer School",
     description:
-      "A polished 2D platformer built with Unity featuring custom physics, smooth animations, and engaging level design.",
+      "An educational platformer game where players learn programming concepts while navigating challenging levels. Coming soon with interactive coding lessons!",
     image: "/placeholder.svg",
-    technologies: ["Unity", "C#", "2D Physics", "Animation"],
-    githubUrl: "https://github.com/abhiraam-bijumon/unity-platformer",
+    technologies: ["Unity", "C#", "Educational Game Design"],
     featured: true,
-  },
-  {
-    id: "3",
-    title: "Space Shooter Pro",
-    description:
-      "Fast-paced space combat game with procedural enemy generation and power-up systems.",
-    image: "/placeholder.svg",
-    technologies: ["Unity", "C#", "Procedural Generation"],
-    githubUrl: "https://github.com/username/space-shooter",
-  },
-  {
-    id: "4",
-    title: "Puzzle Master",
-    description:
-      "Mind-bending puzzle game with over 100 levels and intuitive touch controls.",
-    image: "/placeholder.svg",
-    technologies: ["Unity", "C#", "Mobile"],
-    liveUrl: "https://puzzle-master.app",
-  },
-  {
-    id: "5",
-    title: "Racing Legends",
-    description:
-      "3D racing game with realistic physics and customizable vehicles.",
-    image: "/placeholder.svg",
-    technologies: ["Unity", "C#", "3D Graphics"],
-    githubUrl: "https://github.com/username/racing-legends",
   },
 ];
 
