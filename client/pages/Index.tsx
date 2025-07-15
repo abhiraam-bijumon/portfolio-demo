@@ -44,9 +44,9 @@ const games: Game[] = [
     id: "2",
     title: "Platformer School",
     description:
-      "An educational platformer game where players learn programming concepts while navigating challenging levels. Coming soon with interactive coding lessons!",
+      "A fun platformer adventure where players explore a school setting and complete challenging school-themed levels. Navigate through classrooms, hallways, and school grounds in this upcoming release!",
     image: "/placeholder.svg",
-    technologies: ["Unity", "C#", "Educational Game Design"],
+    technologies: ["Unity", "C#", "Platformer Design"],
     featured: true,
   },
 ];
