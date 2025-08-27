@@ -175,10 +175,10 @@ export default function Index() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center minecraft-cursor">
             {/* Profile Picture */}
             <div className="lg:col-span-4 flex justify-center lg:justify-start">
-              <div className="relative group animate-fade-in cursor-pointer">
+              <div className="relative group animate-fade-in minecraft-pointer">
                 {/* Glow Effect */}
                 <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 rounded-2xl blur-lg opacity-0 group-hover:opacity-75 transition-opacity duration-500  group-hover:animate-none"></div>
 
@@ -248,7 +248,7 @@ export default function Index() {
               <div className="flex items-center gap-4 animate-fade-in">
                 <a
                   href="#games"
-                  className="relative group inline-block cursor-pointer"
+                  className="relative group inline-block minecraft-pointer"
                 >
                   {/* Outer Glow */}
                   <div className="absolute -inset-2 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 rounded-xl blur-xl opacity-0 group-hover:opacity-60 transition-all duration-500"></div>
@@ -308,7 +308,7 @@ export default function Index() {
                 <a
                   href="https://github.com/abhiraam-bijumon"
                   target="_blank"
-                  className="relative group inline-block cursor-pointer"
+                  className="relative group inline-block minecraft-pointer"
                 >
                   {/* Outer Glow */}
                   <div className="absolute -inset-1 bg-gradient-to-r from-slate-600 via-slate-800 to-slate-600 rounded-xl blur-lg opacity-0 group-hover:opacity-60 transition-all duration-500"></div>
@@ -366,11 +366,11 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 minecraft-cursor">
             {games.map((game, index) => (
               <div
                 key={game.id}
-                className="relative group animate-fade-in cursor-pointer"
+                className="relative group animate-fade-in minecraft-pointer"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Glow Effect */}
@@ -478,8 +478,8 @@ export default function Index() {
       <section id="certificates" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Certifications & Achievements
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 minecraft-glow">
+              🏆 Achievements & Certifications ⚡
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Professional certifications and courses that have shaped my
@@ -526,12 +526,11 @@ export default function Index() {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6 bg-muted/30">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Let's Create Something Amazing
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 minecraft-glow">
+            🚀 Let's Build Epic Games Together! 🎮
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Interested in collaborating on a game project or have a question?
-            I'd love to hear from you.
+            Want to join our <span className="text-green-400 font-bold">"Just Shoot"</span> dev team or collaborate on epic projects? ⚡ Let's create the future of gaming together!
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
