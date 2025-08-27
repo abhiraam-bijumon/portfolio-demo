@@ -107,3 +107,48 @@
     text-wrap: balance;
   }
 }
+
+/* Minecraft-themed cursors and animations */
+@layer base {
+  * {
+    cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAVUlEQVR4nGNgGAWjgP6ASdAIBvE7BhEcDQ3/GRhkZBgYNDXp5x8DA4MoAyPDP4Y/DDwMDA9JNU9V9Z/h3z8G7h8MDP8Y/jH8Y/jH8I/BGoaGvwxYwSgAAKzGGVY2lrp8AAAAAElFTkSuQmCC'), auto;
+  }
+
+  .minecraft-cursor {
+    cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAVUlEQVR4nGNgGAWjgP6ASdAIBvE7BhEcDQ3/GRhkZBgYNDXp5x8DA4MoAyPDP4Y/DDwMDA9JNU9V9Z/h3z8G7h8MDP8Y/jH8Y/jH8I/BGoaGvwxYwSgAAKzGGVY2lrp8AAAAAElFTkSuQmCC'), pointer !important;
+  }
+
+  .minecraft-pointer {
+    cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAc0lEQVR4nGNgGAWjgP6ASdAIBvE7BhEcDQ3/GRhkZBgYNDXp5x8DA4MoAyPDP4Y/DDwMDA9JNU9V9Z/h3z8G7h8MDP8Y/jH8Y/jH8I/BGoaGvwxYwSgAAOcMSjQDy0OJgIAAAKzGGVY2lrp8AAAAAElFTkSuQmCC'), pointer !important;
+  }
+
+  button, .minecraft-cursor, .cursor-pointer {
+    cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAc0lEQVR4nGNgGAWjgP6ASdAIBvE7BhEcDQ3/GRhkZBgYNDXp5x8DA4MoAyPDP4Y/DDwMDA9JNU9V9Z/h3z8G7h8MDP8Y/jH8Y/jH8I/BGoaGvwxYwSgAAOcMSjQDy0OJgIAAAKzGGVY2lrp8AAAAAElFTkSuQmCC'), pointer !important;
+  }
+
+  a:hover, button:hover {
+    cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAmElEQVR4nGNgGAWjgP6ASdAIBvE7BhEcDQ3/GRhkZBgYNDXp5x8DA4MoAyPDP4Y/DDwMDA9JNU9V9Z/h3z8G7h8MDP8Y/jH8Y/jH8I/BGoaGvwxYwSjgYGBk+MfAy8DIwMDAy8DI8I+BkYGP4R8DJ8M/hv8MP+i/c39Y/BjYGL4z/GP4x/CP4R8DH8M/hj8M/xj+MTA8BOUfGPox/GMAADYsJnO3d9lWAAAAAElFTkSuQmCC'), pointer !important;
+  }
+}
+
+/* Enhanced gaming effects */
+@keyframes minecraft-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(34, 197, 94, 0.5); }
+  50% { box-shadow: 0 0 30px rgba(34, 197, 94, 0.8), 0 0 40px rgba(34, 197, 94, 0.3); }
+}
+
+@keyframes pixel-drift {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(1px, -1px); }
+  50% { transform: translate(-1px, 1px); }
+  75% { transform: translate(1px, 1px); }
+  100% { transform: translate(0, 0); }
+}
+
+.minecraft-glow {
+  animation: minecraft-glow 2s ease-in-out infinite;
+}
+
+.pixel-drift {
+  animation: pixel-drift 3s ease-in-out infinite;
+}
