@@ -33,9 +33,9 @@ const games: Game[] = [
     id: "1",
     title: "Just Shoot ⚡",
     description:
-      "🔥 Currently working on this epic multiplayer shooter with my amazing dev group! Features intense PvP action, custom weapons, and dynamic maps. Building the next generation of competitive gaming experiences.",
+      "🔥 Currently working on this epic Roblox multiplayer shooter with my amazing dev group! Features intense PvP action, custom weapons, and dynamic maps. Building the next generation of competitive gaming experiences on Roblox!",
     image: "/placeholder.svg",
-    technologies: ["Unity", "C#", "Multiplayer", "Game Design"],
+    technologies: ["Roblox Studio", "Lua", "Multiplayer", "Game Design"],
     featured: true,
   },
   {
