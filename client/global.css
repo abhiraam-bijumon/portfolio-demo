@@ -108,30 +108,14 @@
   }
 }
 
-/* SUPER VISIBLE Minecraft-themed cursors */
+/* Text-based glow effects that emanate from the text */
 @layer utilities {
-  .minecraft-cursor {
-    cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8IS0tIEJsYWNrIGJvcmRlciBhcm91bmQgZXZlcnl0aGluZyAtLT4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIGZpbGw9IiMwMDAwMDAiLz4KICA8IS0tIFdoaXRlIGluc2lkZSAtLT4KICA8cmVjdCB4PSIyIiB5PSIyIiB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIGZpbGw9IiNGRkZGRkYiLz4KICA8IS0tIEJsYWNrIGNlbnRlciBjcm9zcyAtLT4KICA8cmVjdCB4PSIxNCIgeT0iNiIgd2lkdGg9IjQiIGhlaWdodD0iMjAiIGZpbGw9IiMwMDAwMDAiLz4KICA8cmVjdCB4PSI2IiB5PSIxNCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjQiIGZpbGw9IiMwMDAwMDAiLz4KPC9zdmc+'), auto;
-  }
-
-  .minecraft-pointer {
-    cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8IS0tIEJsYWNrIGJvcmRlciBhcm91bmQgZXZlcnl0aGluZyAtLT4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIGZpbGw9IiMwMDAwMDAiLz4KICA8IS0tIEJyaWdodCBncmVlbiBpbnNpZGUgLS0+CiAgPHJlY3QgeD0iMiIgeT0iMiIgd2lkdGg9IjI4IiBoZWlnaHQ9IjI4IiBmaWxsPSIjMDBGRjAwIi8+CiAgPCEtLSBCbGFjayBjZW50ZXIgY3Jvc3MgLS0+CiAgPHJlY3QgeD0iMTQiIHk9IjYiIHdpZHRoPSI0IiBoZWlnaHQ9IjIwIiBmaWxsPSIjMDAwMDAwIi8+CiAgPHJlY3QgeD0iNiIgeT0iMTQiIHdpZHRoPSIyMCIgaGVpZ2h0PSI0IiBmaWxsPSIjMDAwMDAwIi8+Cjwvc3ZnPg=='), pointer;
-  }
-}
-
-/* Apply SUPER VISIBLE Minecraft cursor globally */
-@layer base {
-  body {
-    cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8IS0tIEJsYWNrIGJvcmRlciBhcm91bmQgZXZlcnl0aGluZyAtLT4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIGZpbGw9IiMwMDAwMDAiLz4KICA8IS0tIFdoaXRlIGluc2lkZSAtLT4KICA8cmVjdCB4PSIyIiB5PSIyIiB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIGZpbGw9IiNGRkZGRkYiLz4KICA8IS0tIEJsYWNrIGNlbnRlciBjcm9zcyAtLT4KICA8cmVjdCB4PSIxNCIgeT0iNiIgd2lkdGg9IjQiIGhlaWdodD0iMjAiIGZpbGw9IiMwMDAwMDAiLz4KICA8cmVjdCB4PSI2IiB5PSIxNCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjQiIGZpbGw9IiMwMDAwMDAiLz4KPC9zdmc+'), auto !important;
-  }
-
-  button, a, .cursor-pointer, nav a, [role="button"] {
-    cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8IS0tIEJsYWNrIGJvcmRlciBhcm91bmQgZXZlcnl0aGluZyAtLT4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIGZpbGw9IiMwMDAwMDAiLz4KICA8IS0tIEJyaWdodCBncmVlbiBpbnNpZGUgLS0+CiAgPHJlY3QgeD0iMiIgeT0iMiIgd2lkdGg9IjI4IiBoZWlnaHQ9IjI4IiBmaWxsPSIjMDBGRjAwIi8+CiAgPCEtLSBCbGFjayBjZW50ZXIgY3Jvc3MgLS0+CiAgPHJlY3QgeD0iMTQiIHk9IjYiIHdpZHRoPSI0IiBoZWlnaHQ9IjIwIiBmaWxsPSIjMDAwMDAwIi8+CiAgPHJlY3QgeD0iNiIgeT0iMTQiIHdpZHRoPSIyMCIgaGVpZ2h0PSI0IiBmaWxsPSIjMDAwMDAwIi8+Cjwvc3ZnPg=='), pointer !important;
-  }
-
-  /* Force override any other cursor settings */
-  *, *:hover, *:active, *:focus {
-    cursor: inherit !important;
+  .text-glow-green {
+    text-shadow:
+      0 0 10px rgba(34, 197, 94, 0.8),
+      0 0 20px rgba(34, 197, 94, 0.6),
+      0 0 30px rgba(34, 197, 94, 0.4),
+      0 0 40px rgba(34, 197, 94, 0.2);
   }
 }
 
