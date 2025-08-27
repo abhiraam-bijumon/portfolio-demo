@@ -31,6 +31,15 @@ interface Certificate {
 const games: Game[] = [
   {
     id: "1",
+    title: "Just Shoot ⚡",
+    description:
+      "🔥 Currently working on this epic multiplayer shooter with my amazing dev group! Features intense PvP action, custom weapons, and dynamic maps. Building the next generation of competitive gaming experiences.",
+    image: "/placeholder.svg",
+    technologies: ["Unity", "C#", "Multiplayer", "Game Design"],
+    featured: true,
+  },
+  {
+    id: "2",
     title: "Drive Into Nothing",
     description:
       "An exciting driving game on Roblox that has various levels and is a lot of fun. Achieved 2,000+ visits!",
@@ -41,7 +50,7 @@ const games: Game[] = [
     featured: true,
   },
   {
-    id: "2",
+    id: "3",
     title: "Platformer School",
     description:
       "A fun platformer adventure where players explore a school setting and complete challenging school-themed levels. Navigate through classrooms, hallways, and school grounds in this upcoming release!",
@@ -208,26 +217,23 @@ export default function Index() {
                   </div>
                 </div>
 
-                {/* Game Dev Badge */}
-                <div className="absolute -bottom-2 -right-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-full text-xs font-semibold opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500 shadow-lg">
-                  Game Dev
+                {/* Game Studio Badge */}
+                <div className="absolute -bottom-2 -right-2 bg-gradient-to-r from-green-500 to-emerald-600 text-white px-3 py-1 rounded-full text-xs font-semibold opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500 shadow-lg minecraft-glow">
+                  🎮 Studio Dev
                 </div>
               </div>
             </div>
 
             {/* Content */}
             <div className="lg:col-span-8">
-              <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 animate-fade-in">
+              <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 animate-fade-in minecraft-glow">
                 Unity & Roblox Developer
-                <span className="text-primary block">
-                  Creative Technologist
+                <span className="text-primary block pixel-drift">
+                  Game Studio Founder 🎮
                 </span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed animate-fade-in">
-                I create engaging games across multiple platforms including
-                Unity and Roblox. Passionate about building immersive
-                experiences, interactive gameplay mechanics, and worlds that
-                bring players together. I have been coding since 5 years old.
+                Currently working on <span className="text-green-400 font-bold minecraft-glow">"Just Shoot"</span> with my incredible dev group! 🚀 We're building the next big multiplayer shooter with epic PvP battles and custom weapon systems. I create engaging games across Unity and Roblox, crafting immersive worlds that bring players together. Coding since age 5! ⚡
               </p>
               <div className="flex items-center gap-4 text-muted-foreground mb-8 animate-fade-in">
                 <div className="flex items-center gap-2">
@@ -352,12 +358,11 @@ export default function Index() {
       <section id="games" className="py-20 px-6 bg-muted/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Featured Games
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 minecraft-glow">
+              🎮 Epic Game Collection ⚡
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A collection of games I've developed, showcasing different genres
-              and technical challenges.
+              Featuring <span className="text-green-400 font-bold">"Just Shoot"</span> - our studio's upcoming masterpiece! Plus other games showcasing different genres and technical challenges.
             </p>
           </div>
 
